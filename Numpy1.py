@@ -14,3 +14,12 @@ key point:
 --> Optimized for fast mathematical operations  
 
 '''  
+# Difference between Numpy Array and Python list 
+
+'''
+1. Consumes less memory than  python lists
+2. Fast as compared to the Pyhton lists
+3. Store same data-type but Python lists can store different data-types
+4. Numpy array supports vectorized operations but lists requires loop
+
+'''
