@@ -23,3 +23,8 @@ key point:
 4. Numpy array supports vectorized operations but lists requires loop
 
 '''
+
+
+
+import numpy
+print(numpy.__version__)
