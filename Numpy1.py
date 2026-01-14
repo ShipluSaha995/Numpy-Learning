@@ -25,6 +25,16 @@ key point:
 '''
 
 
+# install numpy in your setup just type pip install numpy before installig numpy make sure your i have downloaded python and the pip 
+# to check the numpy version :
 
-import numpy
-print(numpy.__version__)
+'''
+import numpy as np
+print(np.__version__)
+'''
+# creating a numpy array
+
+import numpy as np
+a = np.array([1,2,3,4,5])
+print(a)
+print(type(a))
