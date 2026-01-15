@@ -33,8 +33,19 @@ import numpy as np
 print(np.__version__)
 '''
 # creating a numpy array
-
+'''
 import numpy as np
 a = np.array([1,2,3,4,5])
 print(a)
 print(type(a))
+'''
+
+import numpy as np
+num=int(input("Enter range: "))
+print("Elemets: ")
+arr=[]
+for i in range(num):
+    element=int(input())
+    arr.append(element)
+
+print(np.array(arr))
