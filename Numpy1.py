@@ -51,8 +51,28 @@ for i in range(num):
 print(np.array(arr))
 '''
 
+'''
 # 2 Dimensional array
 import numpy as np
 arr = np.array([[1,2,3],[4,5,6]])
 print(arr)
+print(arr.ndim)
+'''
+
+import numpy as np 
+
+row = int(input("Rows: "))
+colom = int(input("Colom: "))
+
+matrix=[]
+
+print("Enter elements row by row: ")
+
+for i in range(row):
+    rows= list(map(int,input(f"Enter {colom} elements for rows{i+1}: ").split()))
+    matrix.append(rows)
+
+arr=np.array(matrix)
+print(arr)
+print(arr.shape)
 print(arr.ndim)
