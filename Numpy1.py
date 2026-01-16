@@ -58,6 +58,7 @@ arr = np.array([[1,2,3],[4,5,6]])
 print(arr)
 print(arr.ndim)
 '''
+"""
 
 import numpy as np 
 
@@ -76,3 +77,17 @@ arr=np.array(matrix)
 print(arr)
 print(arr.shape)
 print(arr.ndim)
+"""
+
+# multi dimensional array 
+
+import numpy as np
+
+arr = np.array([[['A', 'B','C'],['D', 'E', 'F'],['G','H','I']],
+                [['J','K','L'], ['M','N','O'],['O','P','Q']],
+                [['R','S','T'], ['U','V','W'],['X','Y','Z']]])
+print(arr)
+print(arr.shape)
+
+
+
