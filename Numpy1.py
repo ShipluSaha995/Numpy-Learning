@@ -39,7 +39,7 @@ a = np.array([1,2,3,4,5])
 print(a)
 print(type(a))
 '''
-
+'''
 import numpy as np
 num=int(input("Enter range: "))
 print("Elemets: ")
@@ -49,3 +49,10 @@ for i in range(num):
     arr.append(element)
 
 print(np.array(arr))
+'''
+
+# 2 Dimensional array
+import numpy as np
+arr = np.array([[1,2,3],[4,5,6]])
+print(arr)
+print(arr.ndim)
