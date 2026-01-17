@@ -84,10 +84,10 @@ print(arr.ndim)
 import numpy as np
 
 arr = np.array([[['A', 'B','C'],['D', 'E', 'F'],['G','H','I']],
-                [['J','K','L'], ['M','N','O'],['O','P','Q']],
-                [['R','S','T'], ['U','V','W'],['X','Y','Z']]])
+                [['J','K','L'], ['M','N','O'],['P','Q','R']],
+                [['S','T','U'], ['V','W','X'],['Y','Z',' ']]])
 print(arr)
-print(arr.shape)
-
-
-
+print("\n", arr.shape)
+print("\n", arr[2,0,0]+arr[0,2,1]+arr[0,2,2]+arr[1,2,0]+arr[1,0,2]+arr[2,0,2])
+name=arr[2,0,0]+arr[0,2,1]+arr[0,2,2]+arr[1,2,0]+arr[1,0,2]+arr[2,0,2]
+print(f'My name is {name}')
