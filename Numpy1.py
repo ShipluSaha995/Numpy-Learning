@@ -80,7 +80,7 @@ print(arr.ndim)
 """
 
 # multi dimensional array 
-
+"""
 import numpy as np
 
 arr = np.array([[['A', 'B','C'],['D', 'E', 'F'],['G','H','I']],
@@ -91,3 +91,23 @@ print("\n", arr.shape)
 print("\n", arr[2,0,0]+arr[0,2,1]+arr[0,2,2]+arr[1,2,0]+arr[1,0,2]+arr[2,0,2])
 name=arr[2,0,0]+arr[0,2,1]+arr[0,2,2]+arr[1,2,0]+arr[1,0,2]+arr[2,0,2]
 print(f'My name is {name}')
+"""
+
+import numpy as np
+
+x=int(input("blocks: "))
+y=int(input("rows per block: "))
+z=int(input("colom per row: "))
+
+data=[]
+
+for i in range(x):
+    block=[]
+    for j in range(y):
+        row=list(map(int, input().split()))
+        block.append(row)
+
+    data.append(block)
+
+arr=np.array(data)
+print(arr)
