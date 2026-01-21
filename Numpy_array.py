@@ -112,7 +112,7 @@ for i in range(x):
 arr=np.array(data)
 print(arr)
 '''
-
+'''
 # rows selection
 #print the rows we need 
 
@@ -135,3 +135,30 @@ print("\n", arr[::2])
 
 # to print the arrays in reverse order like down to up we can use negative 
 print("\n", arr[::-1])
+'''
+
+#Colom Selection
+
+import numpy as np
+
+arr=np.array([[1,2,3,4],
+              [5,6,7,8],
+              [9,10,11,12],
+              [13,14,15,16]
+            ])
+
+print("\n", arr[:, 0]) # counting of the colom will start from 0 the colon is for to select all the rows
+
+print("\n", arr[:, 1])
+
+print("\n", arr[:, 0:3]) # sets the range of the colom to print 
+print("\n", arr[:, ::2]) #setting the step
+
+print("\n", arr[:, ::-1]) #reverse the coloms
+
+print("\n",arr[:, ::])
+
+#selecting  quadrent
+
+print("\n", arr[0:2, 0:2])
+print("\n", arr[0:2, 2:])
