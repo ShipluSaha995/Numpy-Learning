@@ -92,7 +92,7 @@ print("\n", arr[2,0,0]+arr[0,2,1]+arr[0,2,2]+arr[1,2,0]+arr[1,0,2]+arr[2,0,2])
 name=arr[2,0,0]+arr[0,2,1]+arr[0,2,2]+arr[1,2,0]+arr[1,0,2]+arr[2,0,2]
 print(f'My name is {name}')
 """
-
+'''
 import numpy as np
 
 x=int(input("blocks: "))
@@ -111,3 +111,27 @@ for i in range(x):
 
 arr=np.array(data)
 print(arr)
+'''
+
+# rows selection
+#print the rows we need 
+
+import numpy as np
+
+arr=np.array([[1,2,3,4],
+              [5,6,7,8],
+              [9,10,11,12],
+              [13,14,15,16]
+            ])
+
+print("\n",arr[1]) #this wil prinnt the first row
+
+#print(arr[strat:end:step])
+
+print("\n",arr[0:4]) #here the ending index is exclusive
+
+print("\n", arr[0:4:2]) #it will print the 0 number row and the 2nd row (the counting of rows start from 0)
+print("\n", arr[::2])
+
+# to print the arrays in reverse order like down to up we can use negative 
+print("\n", arr[::-1])
