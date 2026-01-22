@@ -165,6 +165,7 @@ print("\n", arr[0:2, 2:])
 
 '''
 # creating arrays without writing values
+'''
 import numpy as np
 
 z= np.zeros(5)
@@ -175,5 +176,22 @@ print(x)
 
 y=np.full(5,7)
 print(y)
+'''
 
-#
+#Range based arrays
+
+import numpy as np
+
+# np.arange(start, stop, step)
+a=np.arange(0,10,2)
+print(a)
+
+# np.linspace(start, stop, num=50)
+
+b= np.linspace(0,10,5)
+print(b)
+
+'''
+linespace works like :
+step=(stop-start)/(num-1)
+'''
