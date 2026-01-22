@@ -138,7 +138,7 @@ print("\n", arr[::-1])
 '''
 
 #Colom Selection
-
+'''
 import numpy as np
 
 arr=np.array([[1,2,3,4],
@@ -162,3 +162,18 @@ print("\n",arr[:, ::])
 
 print("\n", arr[0:2, 0:2])
 print("\n", arr[0:2, 2:])
+
+'''
+# creating arrays without writing values
+import numpy as np
+
+z= np.zeros(5)
+print(z)
+
+x= np.ones(5)
+print(x)
+
+y=np.full(5,7)
+print(y)
+
+#
