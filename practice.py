@@ -1,5 +1,5 @@
 #Create a NumPy array print its type and dtype
-
+'''
 import numpy as np
 
 arr=np.array([5,10,15,20,25])
@@ -14,3 +14,18 @@ for i in range(ran):
     arr2.append(elements)
 print(np.array(arr2))
 print(np.array(arr2).dtype)
+'''
+''''
+Create:
+
+1. A NumPy array of 8 zeros
+2. A NumPy array of 8 ones
+3. A NumPy array of 8 values all equal to 3
+'''
+
+import numpy as np
+
+arr=np.zeros(8)
+arr2=np.ones(8)
+arr3=np.full(8, 3)
+print(f'{arr},\n {arr2},\n {arr3}')
