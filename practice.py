@@ -22,10 +22,20 @@ Create:
 2. A NumPy array of 8 ones
 3. A NumPy array of 8 values all equal to 3
 '''
-
+'''
 import numpy as np
 
 arr=np.zeros(8)
 arr2=np.ones(8)
 arr3=np.full(8, 3)
 print(f'{arr},\n {arr2},\n {arr3}')
+'''
+
+#Create 5 evenly spaced values between 10 and 50 (inclusive).
+
+import numpy as np
+
+arr=np.linspace(10, 50, 5)
+print(arr)
+
+#Create an array of numbers from 1 to 20, but only odd numbers.
