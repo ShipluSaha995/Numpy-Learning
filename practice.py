@@ -32,10 +32,15 @@ print(f'{arr},\n {arr2},\n {arr3}')
 '''
 
 #Create 5 evenly spaced values between 10 and 50 (inclusive).
-
+'''
 import numpy as np
 
 arr=np.linspace(10, 50, 5)
 print(arr)
+'''
 
 #Create an array of numbers from 1 to 20, but only odd numbers.
+import numpy as np
+
+arr=np.arange(1, 21, 2)
+print(arr)
