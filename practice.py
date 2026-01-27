@@ -59,9 +59,21 @@ print(arr.size)
 '''
 
 #Create an array of 1-12 and reshape it in 3 rows and 4 coluoms
-
+'''
 import numpy as np
 
 arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 a=np.reshape(arr,(3, 4))
+print(a)
+'''
+
+# Flatten an array and verify it becomes 1D
+
+import numpy as np
+
+arr=np.array([[5,6],
+              [7,8],
+              [9,10]])
+print(arr,"\n")
+a=arr.flatten()
 print(a)
