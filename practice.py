@@ -13,6 +13,7 @@ for i in range(ran):
     elements=int(input())
     arr2.append(elements)
 print(np.array(arr2))
+print(type(arr2))
 print(np.array(arr2).dtype)
 '''
 ''''
@@ -39,8 +40,19 @@ arr=np.linspace(10, 50, 5)
 print(arr)
 '''
 
+'''
 #Create an array of numbers from 1 to 20, but only odd numbers.
 import numpy as np
 
 arr=np.arange(1, 21, 2)
 print(arr)
+'''
+
+import numpy as np
+
+arr=np.array([[10,20,30],
+              [40,50,60]])
+print(arr)
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
