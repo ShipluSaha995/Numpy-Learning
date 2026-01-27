@@ -47,7 +47,7 @@ import numpy as np
 arr=np.arange(1, 21, 2)
 print(arr)
 '''
-
+'''
 import numpy as np
 
 arr=np.array([[10,20,30],
@@ -56,3 +56,12 @@ print(arr)
 print(arr.ndim)
 print(arr.shape)
 print(arr.size)
+'''
+
+#Create an array of 1-12 and reshape it in 3 rows and 4 coluoms
+
+import numpy as np
+
+arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+a=np.reshape(arr,(3, 4))
+print(a)
