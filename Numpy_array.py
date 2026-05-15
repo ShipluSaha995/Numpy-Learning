@@ -60,7 +60,25 @@ print(arr.ndim)
 '''
 """
 
-import numpy as np 
+try:
+    import numpy as np
+except ImportError:
+    print("Numpy is not installed. Please install it with 'pip install numpy'.")
+    class NumpyFallback:
+        @staticmethod
+        def arange(start, stop=None, step=1):
+            if stop is None:
+                start, stop = 0, start
+            return list(range(start, stop, step))
+
+        @staticmethod
+        def linspace(start, stop, num=50):
+            if num == 1:
+                return [start]
+            step = (stop - start) / (num - 1)
+            return [start + i * step for i in range(num)]
+
+    np = NumpyFallback
 
 row = int(input("Rows: "))
 colom = int(input("Colom: "))
