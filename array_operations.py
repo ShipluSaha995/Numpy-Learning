@@ -20,7 +20,7 @@ print(a2>15)
 
 
 #vector operator , when we apply a operation in two numpy array
-# arithmatic operation
+# arithmetic operation
 
 print("array: ", a1+a2)
 print("array: ", a1-a2)
