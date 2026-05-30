@@ -36,3 +36,24 @@ print(np.arccos(a1))
 print(np.arctan(a1))
 
 
+# dot product
+
+a2=np.arange(12).reshape(3,4)
+a3=np.arange(12,24).reshape(4,3)
+
+print(np.dot(a2,a3))
+
+
+
+#log and Exponent
+
+print(np.log(a1))
+print(np.exp(a1))
+
+
+# round/floor/cell
+
+print(np.round(np.random.random((2,3))*100))
+print(np.floor(np.random.random((2,3))*100))
+print(np.ceil(np.random.random((2,3))*100))
+
