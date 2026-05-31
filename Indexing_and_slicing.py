@@ -71,3 +71,76 @@ print(a3[0,1,:])
 print(a3[1,:,1])
 print(a3[2,1:,1:])
 print(a3[::2, 0, ::2])
+
+#Iterating
+print(a1)
+
+for  i in a1:
+  print(i)
+
+print(a2,"\n")
+
+#2D array
+for i in  a2:
+  print(i)
+
+#3d Array
+
+print(a3,"\n")
+
+for i in a3:
+  print(i)
+
+# run a loop in individual items
+
+for i in np.nditer(a3):
+  print(i)
+
+
+
+# Reshaping 
+
+#reshape
+
+a3=np.arange(27).reshape(3,3,3)
+print(a3)
+
+
+#transpose
+print(a2)
+print(np.transpose(a2))
+print(a2.T)
+
+
+#reval, converts every dimension in 1D array
+
+print(a3)
+print(a3.ravel())\
+
+
+#Stacking, means we can stack up (puting them together) 2 or more than 2 array
+
+
+#horizontal stacking
+
+a4=np.arange(12).reshape(3,4)
+a5=np.arange(12,24).reshape(3,4)
+
+print(a4,"\n")
+print(a5,"\n")
+print(np.hstack((a4,a5)))
+
+#Vertical Stacking
+
+print(np.vstack((a4,a5)))
+
+
+
+# Horizintal Spliting
+print(a4)
+print(np.hsplit(a4,4))
+
+#vertical spliting
+
+print(a5)
+print(np.vsplit(a5,3))
